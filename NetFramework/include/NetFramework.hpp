@@ -14,6 +14,7 @@ Compilateur     : Mingw-w64 g++ 8.1.0
 #define NETFRAMEWORK_NETFRAMEWORK_HPP
 
 #include <string>
+#include "asio.hpp"
 
 class NetFramework {
 public:
