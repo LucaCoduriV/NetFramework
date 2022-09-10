@@ -1,8 +1,24 @@
 #include <iostream>
-#include <NetFramework.hpp>
+#include <Message.hpp>
+
+enum class GameTypes{
+   Position,
+};
 
 int main() {
-   std::cout << NetFramework::test();
-   std::cout << "Hello, World!" << std::endl;
+
+
+   net::Message<GameTypes> msg;
+   msg.header.id = GameTypes::Position;
+
+   msg << 10;
+
+   int value = 0;
+   std::cout<< value << std::endl;
+
+   msg >> value;
+
+   std::cout<< value << std::endl;
+
    return 0;
 }

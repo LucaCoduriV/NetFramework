@@ -2,6 +2,12 @@
 <project version="4">
   <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
   <component name="CidrRootsConfiguration">
+    <sourceRoots>
+      <file path="$PROJECT_DIR$/NetFramework/include" />
+    </sourceRoots>
+    <libraryRoots>
+      <file path="$PROJECT_DIR$/NetFramework/lib" />
+    </libraryRoots>
     <excludeRoots>
       <file path="$PROJECT_DIR$/NetFramework/cmake-build-debug" />
       <file path="$PROJECT_DIR$/Playground/cmake-build-debug" />
